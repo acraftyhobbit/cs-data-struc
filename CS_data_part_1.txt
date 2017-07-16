@@ -1,0 +1,37 @@
+1) What determines the workload of figuring out whether your box of animal crackers contains an elephant?
+ 
+ The workload is O(n) because you have to go through each cracker to determine if it is an elephant. That grow exponentially when ever something is added to the list.
+
+ 2)Order the following runtimes in descending order of efficiency (that is, fastest runtimes first, slowest last) as n approaches infinity: O(1), O(log n), O(n), O(n log n), O(n^2), O(2^n)
+
+ 3)In the following cases, would a stack or queue be a more appropriate data structure?
+    a)The process of loading and unloading pallets onto a flatbed truck = STACK
+    b)Putting bottle caps on bottles of beer as they roll down an assembly line = QUEUE
+    c)Calculating the solution to this mathematical expression: 2 + (7 * 4) - (3 / 2) = QUEUE
+
+4)Describe two more situations where a queue would be an appropriate data structure.
+    Buffer andd caches that discard the oldest page when the get full.
+    Checking whether or not a tree is balanced.
+
+5)Describe two more situations where a stack would be an appropriate data structure.
+    Functions calling functions
+    Error Traceback
+
+6)Given the linked list below, which are the nodes? What is the data for each node? Where is the head? Where is the tail? (Please be as specific as possible — exactly which parts of the diagram correspond to each part? Arrows? Boxes? Text?) 
+
+The boxes are the Nodes. The head is the very first node in the case the Apple node. The data is the string of each node "apple", "berry", "cherry". There is no tail expressed in the diagram however if one was call out it would be the Cherry node. The tails next is always None. The arrows represent the method .next of each of the nodes it is what connects one node to another.
+
+7)What’s the difference between doubly- and singly-linked lists?
+A singly linked list tracks only the next node and their is no way of knowing what came before it.
+A doubly linked list tracks the next node and the previous node so you can go backwards or forward through the linked list.
+
+8)Why is it faster to append to a linked list if we keep track of the tail as an attribute?
+It is faster to append to a linked list if we track the tail because we don't have to go through the list each time in order to find the end.
+
+9) Given the tree above, in what order would a Breadth First Search (BFS) algorithm visit each node until finding burritos (starting at food)? (Assume nodes are enqueued in left-to-right order.) Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+[food, Italian, Indian, Mexican, lasagna, pizza, tikkka masala, sagag, burritos]
+
+10)Given the tree above, in what order would a Depth First Search (DFS) algorithm visit each node until finding Chicago-style (starting at food)? (Assume nodes are pushed in left-to-right order.) Just list the order of nodes visited; no need to recreate the state of the algorithm data in your answer.
+[food, Mexican, enchiladas, tacos, burritos, Indian, sagag, tikka masala, Italian, pizza, Sicilian, New York-style, Chicago-Stlye]
+
+11) A binary search tree can only have two childern a left and right child which often makes for fast searching.
